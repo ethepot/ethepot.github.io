@@ -63,10 +63,6 @@ git clone https://github.com/EwenThepot/ewenthepot.github.io.git
 Le site est automatiquement hébergé via **GitHub Pages** :  
 🔗 [https://ewenthepot.github.io](https://ewenthepot.github.io)
 
-## 📝 Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
 ## 📬 Contact
 
 - ✉️ Email : [thepotewen@gmail.com](mailto:thepotewen@gmail.com)
@@ -76,5 +72,5 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 ---
 
 <div align="center">
-  <sub>Dernière mise à jour : juillet 2024</sub>
+  <sub>Dernière mise à jour : mai 2025</sub>
 </div>
