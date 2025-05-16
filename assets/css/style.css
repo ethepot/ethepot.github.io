@@ -236,6 +236,11 @@
     width: 2em; /* Ajustez la taille selon vos préférences */
     vertical-align: middle; /* Aligne le logo avec le milieu du texte */
     margin-right: 8px; /* Espace entre le logo et le texte */
+    transition: transform 0.3s ease;
+  }
+
+  .stack-logo:hover {
+    transform: scale(1.1);
   }
   
   
@@ -517,5 +522,18 @@
 @media (max-width: 768px) {
   .competency-details {
       grid-template-columns: 1fr; /* Les compétences s'empilent sur une seule colonne en dessous de 768px */
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 0;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 5px;
   }
 }
