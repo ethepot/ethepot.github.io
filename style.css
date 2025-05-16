@@ -1,0 +1,521 @@
+/* style.css */
+:root {
+    --bg-color: #fff2e4; /* Cream/Beige */
+    --text-color: #333333; /* Dark Gray */
+    --accent-color: #A0522D; /* Sienna Brown for accents */
+    --card-bg: #FFFFFF; /* White for cards */
+    --header-footer-bg: #e4d4c4; /* Slightly darker beige for header/footer */
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  header {
+    background: var(--header-footer-bg);
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header h1 a {
+   text-decoration: none;
+   color: var(--text-color);
+  }
+  
+  /****************************************************************************************/
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: var(--accent-color);
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 2rem 0;
+  }
+  
+  section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  section:last-of-type {
+      border-bottom: none;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+    text-align: center;
+  }
+  
+  h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero h2 {
+      margin-bottom: 0.5rem;
+      color: var(--text-color); /* Use main text color for name */
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--accent-color);
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+  }
+  
+  .btn:hover {
+    background: #8B4513; /* Darker sienna */
+  }
+  
+  /* About Section */
+  #about p {
+      margin-bottom: 1rem;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .qualities ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 1.5rem;
+  }
+  
+  .qualities li {
+      background: var(--header-footer-bg);
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+  }
+
+  .qualities h3 {
+    color: var(--accent-color); /* Utilise la couleur d'accent */
+    text-align: center; /* Centre le texte comme les h2 de section */
+    margin-bottom: 1.5rem; /* Ajustez la marge si nécessaire pour l'espacement avec la liste */
+}
+  
+  /* Skills Section */
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .stack-category {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .stack-category h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  .stack-category ul {
+    list-style: none;
+  }
+  
+  .stack-category ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2em;
+    position: relative;
+  }
+  
+  .stack-category ul li::before {
+      content: '✓'; /* Check mark */
+      color: var(--accent-color);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+  }
+
+  .stack-logo {
+    width: 2em; /* Ajustez la taille selon vos préférences */
+    vertical-align: middle; /* Aligne le logo avec le milieu du texte */
+    margin-right: 8px; /* Espace entre le logo et le texte */
+  }
+  
+  
+  /* Projects Section */
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    flex-grow: 1; /* Make content fill space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+  }
+  
+  .card p {
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Push tags and button down */
+  }
+  
+  .tags {
+      margin-bottom: 1rem;
+  }
+  
+  .tags span {
+    display: inline-block;
+    background: var(--header-footer-bg);
+    color: var(--text-color);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Experience & Education Section */
+  #experience ul, #education ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 700px;
+      margin: 1rem auto; /* Center the list */
+  }
+  
+  #experience li, #education li {
+      background: var(--card-bg);
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  #experience li strong, #education li strong {
+      display: block;
+      font-size: 1.2rem;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+  }
+  
+  #experience li span, #education li span {
+      display: block;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+  }
+  
+  /* Contact Section */
+  #contact {
+    text-align: center;
+  }
+
+  #contact ul {
+      list-style: none;
+      text-align: center;
+  }
+  #contact li {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+  }
+  #contact a {
+      color: var(--accent-color);
+      text-decoration: none;
+  }
+  #contact a:hover {
+      text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--header-footer-bg);
+    color: #666;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+  }
+  
+  /* Project Detail Page Specific Styles */
+  .project-detail {
+    padding: 2rem 0;
+  }
+  
+  .project-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .project-detail .technologies,
+  .project-detail .skills-learned {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 5px;
+  }
+  
+  .project-detail h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  .project-detail ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  .project-detail ul li {
+    margin-bottom: 0.5rem;
+  }
+  .project-detail .tags span {
+      display: inline-block;
+      background: var(--header-footer-bg);
+      color: var(--text-color);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      margin-right: 5px;
+      margin-bottom: 5px;
+  }
+  
+  .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .back-link:hover {
+      text-decoration: underline;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    html {
+      scroll-padding-top: 8em;
+    }
+  
+    nav ul {
+      margin-top: 1rem;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin: 0 10px;
+    }
+  
+    .hero {
+      flex-direction: column-reverse; /* Image above text on mobile */
+      padding: 2rem 0;
+    }
+  
+    .hero-text {
+      text-align: center;
+    }
+     .hero h2 {
+      text-align: center; /* Center name on mobile */
+     }
+  
+    .skills-grid, .project-cards {
+      grid-template-columns: 1fr; /* Stack elements */
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  /* Section Compétences BUT Informatique */
+#competencies {
+  padding: 3rem 0; /* Conservez le padding des sections */
+  border-bottom: 1px solid #eee; /* Conservez la bordure du bas */
+}
+
+.competency-details {
+  margin-top: 2rem;
+  display: grid; /* Vous pouvez utiliser Grid ou Flexbox ici. Grid peut aider à aligner sur plusieurs colonnes. */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustez minmax si besoin */
+  gap: 2rem; /* Espace entre les blocs de compétence */
+}
+
+.competency-item {
+  background: var(--card-bg); /* Fond blanc comme les cartes de projet */
+  padding: 1.5rem;
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  display: flex; /* Utilise Flexbox pour organiser le contenu interne (titre, description, traces) */
+  flex-direction: column; /* Les éléments s'empilent verticalement */
+}
+
+.competency-item h3 {
+  color: var(--accent-color); /* Couleur d'accent pour le titre de chaque compétence */
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee; /* Petite ligne de séparation sous le titre */
+  padding-bottom: 0.5rem;
+  text-align: left; /* Alignement du titre de la compétence à gauche */
+}
+
+.competency-item h4 {
+  color: var(--text-color); /* Couleur du texte principal pour le sous-titre "Traces et preuves" */
+  margin-top: 1.5rem; /* Espace au-dessus du sous-titre */
+  margin-bottom: 0.8rem; /* Espace en dessous du sous-titre */
+}
+
+.competency-item p {
+  margin-bottom: 1rem; /* Espace sous les paragraphes de description */
+}
+
+.competency-item ul {
+  list-style: disc; /* Utilise des points pour la liste des traces */
+  margin-left: 20px; /* Indente la liste */
+  padding-left: 0;
+}
+
+.competency-item ul li {
+  margin-bottom: 0.5rem; /* Espace entre les éléments de la liste */
+}
+
+.competency-item ul li a {
+  color: var(--accent-color); /* Couleur d'accent pour les liens vers les traces */
+  text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+.competency-item ul li a:hover {
+  text-decoration: underline; /* Souligne les liens au survol */
+}
+
+/* Optionnel : Ajustement pour les petits écrans si nécessaire */
+@media (max-width: 768px) {
+  .competency-details {
+      grid-template-columns: 1fr; /* Les compétences s'empilent sur une seule colonne en dessous de 768px */
+  }
+}
