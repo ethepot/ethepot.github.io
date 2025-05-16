@@ -12,7 +12,7 @@ Développeur passionné par la création d'applications utiles et innovantes.
 - **Galerie de projets** avec fiches techniques détaillées
 - **Stack technique** complète (C, Python, Java, Docker...)
 - **Design responsive** adapté à tous les appareils
-- **Contact direct** via email/LinkedIn
+- **Contact direct** via email/téléphone/LinkedIn
 
 ## 🛠 Technologies Utilisées
 
