@@ -1,6 +1,3 @@
-# ethepot.github.io
-Dépôt hébergeant mon site web portfolio universitaire, développé en HTML/CSS
-
 # 📚 Portfolio - Ewen Thépot
 
 [![GitHub Pages](https://img.shields.io/badge/🌐_Visiter_le_site-GitHub_Pages-2ea44f)](https://ewenthepot.github.io)
