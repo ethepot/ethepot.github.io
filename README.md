@@ -1,6 +1,6 @@
 # 📚 Portfolio - Ewen Thépot
 
-[![GitHub Pages](https://img.shields.io/badge/🌐_Visiter_le_site-GitHub_Pages-2ea44f)](https://ewenthepot.github.io)
+[![GitHub Pages](https://img.shields.io/badge/🌐_Visiter_le_site-GitHub_Pages-2ea44f)](https://ethepot.github.io)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **Portfolio d'un étudiant en BUT Informatique à la recherche d'une alternance (2025-2027)**  
