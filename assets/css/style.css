@@ -166,6 +166,7 @@ h3 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 3rem;
 }
 
 .qualities ul {
@@ -175,6 +176,7 @@ h3 {
   justify-content: center;
   gap: 20px;
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .qualities li {
@@ -196,6 +198,7 @@ h3 {
 /* Section Compétences BUT Informatique */
 #competencies {
   padding: 3rem 0;
+  padding-top: 0;
   border-bottom: 1px solid #eee;
 }
 
@@ -258,6 +261,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .stack-category {
@@ -310,6 +314,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .card {
@@ -361,6 +366,10 @@ h3 {
 }
 
 /* Section formation */
+#experience, #education {
+  padding-bottom: 3rem;
+}
+
 #experience ul,
 #education ul {
   list-style: none;
@@ -397,6 +406,7 @@ h3 {
 /* Section contact */
 #contact {
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 #contact ul {
