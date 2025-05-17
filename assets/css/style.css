@@ -609,6 +609,7 @@ button:hover {
 }
 
 .close-btn {
+  transition: 0.3s ease;
   position: absolute;
   top: 30px;
   right: 40px;
@@ -616,6 +617,11 @@ button:hover {
   color: white;
   cursor: pointer;
   z-index: 2;
+}
+
+.close-btn:hover {
+  transform: rotate(-90deg);
+  color: #ff6b6b;
 }
 
 .grille-traitement {
