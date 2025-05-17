@@ -25,6 +25,19 @@
     <main class="container project-detail">
         <h2>Projet : Automatisation d'un jeu Snake en C</h2>
 
+        <div class="project-gallery">
+            <div class="thumbnail-container" data-full="../images/projets/snake-autonome.png">
+                <img src="../images/projets/snake-autonome.png" alt="Capture projet Snake" class="thumbnail">
+                <div class="zoom-icon">🔍</div>
+            </div>
+        </div>
+            <!-- Lightbox globale (une seule pour toute la page) -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img src="" alt="Agrandie" class="lightbox-img" id="lightboxImg">
+        </div>
+        <script src="../assets/js/vignette-projet.js"></script>
+
          <p>
             Ce projet consistait à rendre autonome une version du jeu classique "Snake" en utilisant le langage de programmation C. Le jeu est le même que celui développé précédemment dans le <a href="snake-manuel.html">projet Snake</a>, mais avec l'ajout d'une fonctionnalité d'automatisation qui a pour but de toujours choisir le chemin le plus court.
         </p>
