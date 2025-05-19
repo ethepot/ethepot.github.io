@@ -159,6 +159,10 @@ h3 {
   background: #8B4513;
 }
 
+.btn:active {
+  background: #672f07;
+}
+
 /* Section a-propos */
 #about p {
   margin-bottom: 1rem;
@@ -632,6 +636,27 @@ button:hover {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   align-items: center;
+}
+
+header a:active, header ul li a:active,
+#competencies .competency-item ul li a:active,
+.back-link:active {
+  color: #672f07;
+}
+
+button:active {
+  background-color: black;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.project-links a.btn {
+  width: 30%;
+  text-align: center;
 }
 
 /* Media queries */
