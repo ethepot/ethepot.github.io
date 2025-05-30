@@ -318,7 +318,6 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  padding-bottom: 3rem;
 }
 
 .card {
@@ -435,16 +434,26 @@ h3 {
 .contact-container {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   align-items: center;
+}
+
+.contact-info-map {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .contact-info {
   flex: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .contact-map {
   flex: 1;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .contact-map iframe {
@@ -462,6 +471,12 @@ footer {
   margin-top: auto;
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
+}
+
+footer img {
+  width: 2em;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 /* Pages projets */
@@ -720,4 +735,71 @@ button:active {
 .dl-projets {
   max-height: 50px;
   text-align:center;
+  margin-bottom: 3rem;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    max-height: 320px;;
+    resize: vertical;
+}
+
+.form-submit{
+    text-align: center;
+}
+
+.form-submit .btn {
+    position: initial;
+    margin: 0;
+}
+
+/* Réorganisation pour mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-form {
+        order: -1; /* Met le formulaire en premier sur mobile */
+        margin-bottom: 2rem;
+        width: 100%;
+    }
 }
