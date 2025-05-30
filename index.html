@@ -169,7 +169,8 @@
                     <ul>
                         <li><img src="images/logos/html5.png" alt="Logo HTML5" class="stack-logo"> HTML 5</li>
                         <li><img src="images/logos/css3.png" alt="Logo CSS3" class="stack-logo"> CSS 3</li>
-                        <li><img src="images/logos/javascript.png" alt="Logo JavaScript" class="stack-logo"> JavaScript</li>
+                        <li><img src="images/logos/javascript.png" alt="Logo JavaScript" class="stack-logo"> JavaScript
+                        </li>
                     </ul>
                 </div>
                 <div class="stack-category">
@@ -292,7 +293,9 @@
                 <div class="card">
                     <div class="card-content">
                         <h3>Site web - Portfolio</h3>
-                        <p>Conception et développement complet de ce site web portfolio. Intégration d'un formulaire de contact fonctionnel et optimisation pour une expérience utilisateur moderne et professionnelle.</p>
+                        <p>Conception et développement complet de ce site web portfolio. Intégration d'un formulaire de
+                            contact fonctionnel et optimisation pour une expérience utilisateur moderne et
+                            professionnelle.</p>
                         <div class="tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
@@ -302,7 +305,8 @@
                     </div>
                 </div>
                 <div></div>
-                <a href="fichiers/tous-mes-projets.zip" class="btn dl-projets"><i class="fa-solid fa-download"></i> Télécharger tous mes projets (.zip)</a>
+                <a href="fichiers/tous-mes-projets.zip" class="btn dl-projets"><i class="fa-solid fa-download"></i>
+                    Télécharger tous mes projets (.zip)</a>
             </div>
         </section>
 
@@ -338,52 +342,56 @@
             </ul>
         </section>
 
-<section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>Intéressé par mon profil ? N'hésitez pas à me contacter !</p>
-    <div class="contact-container">
-        <!-- Formulaire à gauche -->
-        <div class="contact-form" style="flex:1;">
-            <form action="https://formspree.io/f/xvgaezor" method="POST">
-                <h3>Envoyez-moi un message</h3>
-                <div class="form-group">
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Intéressé par mon profil ? N'hésitez pas à me contacter !</p>
+            <div class="contact-container">
+                <!-- Formulaire à gauche -->
+                <div class="contact-form" style="flex:1;">
+                    <form action="https://formspree.io/f/xvgaezor" method="POST">
+                        <h3>Envoyez-moi un message</h3>
+                        <div class="form-group">
+                            <label for="name">Nom :</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn">Envoyer le message</button>
+                        </div>
+                    </form>
+                    <div id="form-message" style="margin-top:1rem;"></div>
+                    <script src="assets/js/formulaire-contact.js"></script>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="form-submit">
-                    <button type="submit" class="btn">Envoyer le message</button>
-                </div>
-            </form>
-            <div id="form-message" style="margin-top:1rem;"></div>
-            <script src="assets/js/formulaire-contact.js"></script>
-        </div>
 
-        <div class="contact-info-map" style="flex:1; display:flex; flex-direction:column;">
-            <div class="contact-info">
-                <ul>
-                    <li><i class="fas fa-envelope"></i> Email : <a href="mailto:thepotewen@gmail.com">thepotewen@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> Téléphone : <a href="tel:+33635261367">+33 6 35 26 13 67</a></li>
-                    <li><i class="fab fa-linkedin"></i> LinkedIn : <a href="https://www.linkedin.com/in/ewen-thepot" target="_blank">Ewen Thépot</a></li>
-                    <li><i class="fab fa-github"></i> Github : <a href="https://www.github.com/ethepot" target="_blank">Ethepot</a></li>
-                </ul>
+                <div class="contact-info-map" style="flex:1; display:flex; flex-direction:column;">
+                    <div class="contact-info">
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> Email : <a
+                                    href="mailto:thepotewen@gmail.com">thepotewen@gmail.com</a></li>
+                            <li><i class="fas fa-phone"></i> Téléphone : <a href="tel:+33635261367">+33 6 35 26 13
+                                    67</a></li>
+                            <li><i class="fab fa-linkedin"></i> LinkedIn : <a
+                                    href="https://www.linkedin.com/in/ewen-thepot" target="_blank">Ewen Thépot</a></li>
+                            <li><i class="fab fa-github"></i> Github : <a href="https://www.github.com/ethepot"
+                                    target="_blank">Ethepot</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5260.469152839663!2d-3.4543869238772174!3d48.75831650774421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48122c034b5275af%3A0x355e62516b08c22f!2sIUT%20de%20Lannion%20-%20Universit%C3%A9%20de%20Rennes!5e0!3m2!1sfr!2sfr!4v1747518139656!5m2!1sfr!2sfr"
+                            height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="contact-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5260.469152839663!2d-3.4543869238772174!3d48.75831650774421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48122c034b5275af%3A0x355e62516b08c22f!2sIUT%20de%20Lannion%20-%20Universit%C3%A9%20de%20Rennes!5e0!3m2!1sfr!2sfr!4v1747518139656!5m2!1sfr!2sfr"
-                    height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
             <i class="fas fa-arrow-up"></i>
