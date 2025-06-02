@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet: Conception BDD - Ewen Thépot</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style-projet.css">
 </head>
+
 <body>
     <header>
-        <div class="container">
-             <h1><a href="../index.html">Ewen THÉPOT</a></h1>
-             <nav>
-                 <ul>
-                     <li><a href="../index.html#about">À Propos</a></li>
-                     <li><a href="../index.html#competencies">Compétences</a></li>
-                     <li><a href="../index.html#stack">Stack Technique</a></li>
-                     <li><a href="../index.html#projects">Projets</a></li>
-                     <li><a href="../index.html#contact">Contact</a></li>
-                 </ul>
-             </nav>
+        <div>
+            <h1><a href="../index.html">Ewen THÉPOT</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#about">À Propos</a></li>
+                    <li><a href="../index.html#competencies">Compétences</a></li>
+                    <li><a href="../index.html#stack">Stack Technique</a></li>
+                    <li><a href="../index.html#projects">Projets</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="container project-detail">
+    <main>
         <h2>Projet : Conception d'une Base de Données - Championnats</h2>
 
-        <div class="project-gallery">
-            <div class="thumbnail-container" data-full="../images/projets/bdd-championnat.png">
-                <img src="../images/projets/bdd-championnat.png" alt="Capture projet Snake" class="thumbnail">
-                <div class="zoom-icon">🔍</div>
+        <div>
+            <div data-full="../images/projets/bdd-championnat.png">
+                <img src="../images/projets/bdd-championnat.png" alt="Capture projet Snake">
+                <div>🔍</div>
             </div>
         </div>
-            <!-- Lightbox globale (une seule pour toute la page) -->
-        <div class="lightbox" id="lightbox">
-            <span class="close-btn" id="closeBtn">&times;</span>
-            <img src="" alt="Agrandie" class="lightbox-img" id="lightboxImg">
+        <div id="lightbox">
+            <span id="closeBtn">&times;</span>
+            <img src="" alt="Agrandie" id="lightboxImg">
         </div>
         <script src="../assets/js/vignette-projet.js"></script>
 
         <p>
-            Ce projet consistait à concevoir et implémenter une base de données relationnelle pour gérer les informations relatives à des championnats sportifs (équipes, joueurs, matchs, résultats, etc.).
+            Ce projet consistait à concevoir et implémenter une base de données relationnelle pour gérer les
+            informations relatives à des championnats sportifs (équipes, joueurs, matchs, résultats, etc.).
         </p>
         <p>
-            La première phase a été la modélisation conceptuelle à l'aide d'un diagramme de classes UML, réalisé avec Visual Paradigm pour définir les classes, leurs attributs et leurs relations.
+            La première phase a été la modélisation conceptuelle à l'aide d'un diagramme de classes UML, réalisé avec
+            Visual Paradigm pour définir les classes, leurs attributs et leurs relations.
         </p>
-         <p>
-            Ensuite, la base de données a été créée en utilisant le système de gestion de base de données Rel et le langage d'interrogation et de manipulation Tutorial D. Cela a permis de mettre en pratique les concepts de bases de données relationnelles appris en cours.
+        <p>
+            Ensuite, la base de données a été créée en utilisant le système de gestion de base de données Rel et le
+            langage d'interrogation et de manipulation Tutorial D. Cela a permis de mettre en pratique les concepts de
+            bases de données relationnelles appris en cours.
         </p>
 
-        <div class="project-links">
-            <a href="../fichiers/bdd-championnat.zip" download class="btn">Télécharger le projet BDD - Championnat (.zip)</a>
+        <div>
+            <a href="../fichiers/bdd-championnat.zip" download class="btn">Télécharger le projet BDD - Championnat
+                (.zip)</a>
             <a href="https://github.com/ethepot/bdd-championnat" target="_blank" class="btn">Voir sur GitHub</a>
         </div>
 
-        <div class="technologies">
+        <div>
             <h3>Technologies Utilisées</h3>
-             <div class="tags">
+            <div>
                 <span>UML</span>
                 <span>Visual Paradigm</span>
                 <span>Base de Données Relationnelle</span>
@@ -64,7 +71,7 @@
             </div>
         </div>
 
-         <div class="skills-learned">
+        <div>
             <h3>Compétences Acquises</h3>
             <ul>
                 <li>Analyse des besoins et modélisation de données (UML)</li>
@@ -76,14 +83,17 @@
             </ul>
         </div>
 
-        <a href="../index.html#projects" class="back-link">← Retour aux projets</a>
+        <a href="../index.html#projects">← Retour aux projets</a>
 
     </main>
 
     <footer>
-        <div class="container">
-            <p><img src="../images/logos/iut-lannion.png" alt="Logo IUT Lannion" class="stack-logo"><a href="https://iut-lannion.univ-rennes.fr/informatique" target="_blank">IUT de Lannion</a> - 2025 Ewen Thépot.</p>
+        <div>
+            <p><img src="../images/logos/iut-lannion.png" alt="Logo IUT Lannion"><a
+                    href="https://iut-lannion.univ-rennes.fr/informatique" target="_blank">IUT de Lannion</a> - 2025
+                Ewen Thépot.</p>
         </div>
     </footer>
 </body>
+
 </html>

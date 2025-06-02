@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet: Chaîne Traitement Fichiers - Ewen Thépot</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style-projet.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="conteneur">
             <h1><a href="../index.html">Ewen THÉPOT</a></h1>
             <nav>
                 <ul>
@@ -24,29 +25,25 @@
         </div>
     </header>
 
-    <main class="container project-detail">
+    <main class="conteneur project-detail">
         <h2>Projet : Réalisation d'une Chaîne de Traitement de Fichiers</h2>
 
-        <div class="grille-traitement">
-            <div class="project-gallery">
-                <div class="thumbnail-container" data-full="../images/projets/traitement-fichiers-input.png">
-                    <img src="../images/projets/traitement-fichiers-input.png" alt="Capture projet Snake" class="thumbnail">
-                    <div class="zoom-icon">Fichier d'origine 🔍</div>
-                </div>
+        <div class="project-gallery">
+            <div class="thumbnail-conteneur" data-full="../images/projets/traitement-fichiers-input.png">
+                <img src="../images/projets/traitement-fichiers-input.png" alt="Fichier d'origine" class="thumbnail">
+                <div class="zoom-icon">Fichier d'origine 🔍</div>
             </div>
-            <div class="project-gallery">
-                <div class="thumbnail-container" data-full="../images/projets/traitement-fichiers-output.png">
-                    <img src="../images/projets/traitement-fichiers-output.png" alt="Capture projet Snake" class="thumbnail">
-                    <div class="zoom-icon">Fichier traité 🔍</div>
-                </div>
+            <div class="thumbnail-conteneur" data-full="../images/projets/traitement-fichiers-output.png">
+                <img src="../images/projets/traitement-fichiers-output.png" alt="Fichier traité" class="thumbnail">
+                <div class="zoom-icon">Fichier traité 🔍</div>
             </div>
-            <!-- Lightbox globale (une seule pour toute la page) -->
-            <div class="lightbox" id="lightbox">
-                <span class="close-btn" id="closeBtn">&times;</span>
-                <img src="" alt="Agrandie" class="lightbox-img" id="lightboxImg">
-            </div>
-            <script src="../assets/js/vignette-projet.js"></script>
         </div>
+        <!-- Lightbox globale (une seule pour toute la page) -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img src="" alt="Agrandie" class="lightbox-img" id="lightboxImg">
+        </div>
+        <script src="../assets/js/vignette-projet.js"></script>
 
         <p>
             L'objectif de ce projet était de créer une chaîne automatisée pour le traitement de fichiers. Cela
@@ -95,7 +92,7 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="conteneur">
             <p><img src="../images/logos/iut-lannion.png" alt="Logo IUT Lannion" class="stack-logo"><a
                     href="https://iut-lannion.univ-rennes.fr/informatique" target="_blank">IUT de Lannion</a> - 2025
                 Ewen Thépot.</p>

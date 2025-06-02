@@ -1,5 +1,12 @@
-const form = document.querySelector('.contact-form form');
-const msg = document.getElementById('form-message');
+const form = document.querySelector('form');
+const msg = document.querySelector('.message') || document.createElement('div');
+
+// Si l'élément message n'existe pas, on le crée et l'ajoute après le formulaire
+if (!document.querySelector('.message') && form) {
+  msg.className = 'message';
+  form.parentNode.insertBefore(msg, form.nextSibling);
+}
+
 if(form) {
   form.addEventListener('submit', async function(e) {
     e.preventDefault();

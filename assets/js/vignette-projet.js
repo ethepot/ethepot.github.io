@@ -1,4 +1,5 @@
-document.querySelectorAll('.thumbnail-container').forEach(container => {
+// Sélectionner les conteneurs d'images qui ont l'attribut data-full
+document.querySelectorAll('div[data-full]').forEach(container => {
   container.addEventListener('click', () => {
     const fullImageSrc = container.getAttribute('data-full');
     const lightbox = document.getElementById('lightbox');
@@ -12,7 +13,7 @@ document.querySelectorAll('.thumbnail-container').forEach(container => {
 document.getElementById('closeBtn').addEventListener('click', closeLightbox);
 
 document.getElementById('lightbox').addEventListener('click', (e) => {
-  // Ferme si clic en dehors de l’image
+  // Ferme si clic en dehors de l'image
   if (e.target.id === 'lightbox') {
     closeLightbox();
   }
