@@ -395,6 +395,30 @@ main section:nth-of-type(7) li span {
   margin-bottom: 0.5em;
 }
 
+/* Logo Intermarché expérience */
+main section:nth-of-type(6) li:first-of-type {
+  background-image: url("/images/logos/intermarche.png");
+  background-size: 9em;
+  background-repeat: no-repeat;
+  background-position: top 1.5em right 1.5em;
+}
+
+/* Logo IUT formation */
+main section:nth-of-type(7) li:first-of-type {
+  background-image: url("/images/logos/iut-lannion.png");
+  background-size: 5em;
+  background-repeat: no-repeat;
+  background-position: top 1.5em right 1.5em;
+}
+
+/* Logo Lycée formation */
+main section:nth-of-type(7) li:nth-of-type(2) {
+  background-image: url("/images/logos/lycee.svg");
+  background-size: 9em;
+  background-repeat: no-repeat;
+  background-position: top 1.5em right 1.5em;
+}
+
 /* Section contact */
 main section:nth-of-type(8) {
   text-align: center;
