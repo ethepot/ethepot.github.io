@@ -306,6 +306,7 @@ main section:nth-of-type(5)>div {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
   margin-top: 2em;
+  padding-bottom: 3em;
 }
 
 main section:nth-of-type(5)>div>div {
